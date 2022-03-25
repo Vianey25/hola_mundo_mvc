@@ -1,7 +1,10 @@
 import web
 
 urls = (
-    '/', 'mvc.controllers.public.index.Index' #se indica la ruta donde esta el archivo .py
+    '/', 'mvc.controllers.public.index.Index' ,
+    "/sensores", "mvc.controllers.sensores.Sensores"
+    
+    
 )
 app = web.application(urls, globals()) 
 
